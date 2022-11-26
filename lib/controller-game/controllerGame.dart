@@ -1,3 +1,4 @@
+import 'dart:collection';
 import 'dart:developer' as dev;
 import 'dart:math';
 
@@ -65,7 +66,6 @@ class ControllerGame extends GetxController {
         twoDList[x1][y1] = '0';
       }
     }
-    //  display();
   }
 
   void display() {
@@ -96,6 +96,22 @@ class ControllerGame extends GetxController {
       dev.log("you win");
     }
     return win;
+  }
+  finaly(){
+
+  }
+
+  Queue queue = Queue();
+
+  bfs(root) {
+    var bfsQ = queue.remove(root);
+    List path = [];
+    while(bfsQ){
+      for (var i = 0; i < 100; ++i) {
+        //out =  bfsQ.
+
+      }
+    }
   }
 
   @override
